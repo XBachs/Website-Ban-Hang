@@ -5,9 +5,9 @@ const TypeProduct = ({ name }) => {
   const navigate = useNavigate();
 
   const handleNavigateType = (type) => {
-    navigate(`/product/${type?.replace(/ /g,"_")}`, {state: type});
+    navigate(`/product/${type?.replace(/ /g, "_")}`, { state: type });
 
-    /*--- Thay bằng câu lệnh dưới nếu product type dùng tiếng Việt*/ 
+    /*--- Thay bằng câu lệnh dưới nếu product type dùng tiếng Việt*/
     // navigate(
     //   `/product/${type
     //     .normalize("NFD")
@@ -18,7 +18,12 @@ const TypeProduct = ({ name }) => {
 
   return (
     <div
-      style={{ padding: "0 10px", cursor: "pointer" }}
+      style={{
+        padding: "0 10px",
+        cursor: "pointer",
+        textTransform: "capitalize",
+        fontWeight: 500,
+      }}
       onClick={() => handleNavigateType(name)}
     >
       {name}

@@ -6,13 +6,15 @@ export const WrapperTypeProduct = styled.div`
   align-items: center;
   gap: 24px;
   justify-content: flex-start;
-  border-bottom: 1px solid red;
-  height: 44px;
+  padding: 16px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
 `;
 export const WrapperButtonMore = styled(ButtonComponent)`
   &:hover {
-    color: ${(props) => (props.disabled ? '#f2f3f4' : '#fff')};
-    background: ${(props) => (props.disabled ? 'transparent' : 'rgb(13, 92, 182)')};
+    color: ${(props) => (props.disabled ? "#f2f3f4" : "#fff")};
+    background: ${(props) =>
+      props.disabled ? "transparent" : "rgb(13, 92, 182)"};
     span {
       color: #fff;
     }
@@ -20,7 +22,7 @@ export const WrapperButtonMore = styled(ButtonComponent)`
   width: 100%;
   text-align: center;
   cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
-  color: ${(props) => (props.disabled ? '#a3a3a3' : 'rgb(11, 116, 229)')};
+  color: ${(props) => (props.disabled ? "#a3a3a3" : "rgb(11, 116, 229)")};
 `;
 
 export const WrapperProducts = styled.div`
