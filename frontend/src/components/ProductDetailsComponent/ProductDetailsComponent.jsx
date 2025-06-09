@@ -1,7 +1,7 @@
 import { Col, Image, Rate, Row } from "antd";
 import React, { useState } from "react";
 import imageProduct from "../../assets/images/test.webp";
-import imageProductSmall from "../../assets/images/thumb-small.webp";
+import imageProductSmall from "../../assets/images/test-small.webp";
 import {
   WrapperStyleImageSmall,
   WrapperStyleColImage,
